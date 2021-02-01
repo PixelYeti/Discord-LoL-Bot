@@ -125,7 +125,7 @@ client.on('message', async (message) => {
 
   let stringBuilder = '';
 
-  stringBuilder += `In ${users[userKeys[0]].user.name} and ${users[userKeys[1]].user.name} last 8 games together`;
+  stringBuilder += `In ${users[userKeys[0]].user.name} and ${users[userKeys[1]].user.name} last ${commonGameIds.length} games together`;
 
   let maxUserAccountId;
   if (users[userKeys[0]].highestDamage > users[userKeys[1]].highestDamage) {
